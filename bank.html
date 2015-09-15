@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/scripts.js"></script>
+        <title>The Bank</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <form id="new-account">
+                        <h3>Create A New Account!</h3>
+                        <div class="form-group">
+                            <label for="new-first-name">First name</label>
+                            <input type="text" class="form-control" id="new-first-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="new-last-name">Last name</label>
+                            <input type="text" class="form-control" id="new-last-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="new-balance">Balance</label>
+                            <input type="number" class="form-control" id="new-balance">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enter</button>
+                    </form>
+                    <h2>List of Accounts</h2>
+                    <ul id="accounts">
+
+                    </ul>
+                </div> <!-- col-md-4 -->
+                <div class="col-md-6">
+                    <form id="change-balance">
+                        <h3>Enter a Deposit or Withdrawl Amount</h3>
+                        <div class="form-group">
+                            <label for="new-deposit" id="deposit-index">Deposit</label>
+                            <input type="number" class="form-control" id="new-deposit" value=0>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-withdrawl">Withdrawl</label>
+                            <input type="number" class="form-control" id="new-withdrawl" value=0>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <h1 class="account-name"></h1>
+                    <p><h3>Your Balance Is: $<span id="balance"></span></h3></p>
+                </div> <!-- col-md-6 -->
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </body>
+</html>
